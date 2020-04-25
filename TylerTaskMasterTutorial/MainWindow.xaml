@@ -1,0 +1,30 @@
+﻿<Window x:Class="TylerTaskMasterTutorial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TylerTaskMasterTutorial"
+        mc:Ignorable="d"
+        Icon="Images/missile.ico"
+        Title="Tyler's Task Master" Height="450" Width="800">
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" SelectionMode="Single" Height="206" Margin="39,172,0,0" VerticalAlignment="Top" Width="718"/>
+        <GroupBox Header="Task" HorizontalAlignment="Left" Height="157" Margin="39,10,0,0" VerticalAlignment="Top" Width="718">
+
+
+        </GroupBox>
+        <TextBox x:Name="TxtTask" HorizontalAlignment="Left" Height="23" Margin="160,48,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="222"/>
+        <DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="468,47,0,0" VerticalAlignment="Top" Width="204" SelectedDateFormat="Short"/>
+        <ComboBox x:Name="comBoxStatus"  Text="Please Select..."  HorizontalAlignment="Left" Margin="160,90,0,0" VerticalAlignment="Top" Width="120" AllowDrop="True" UseLayoutRounding="False" Padding="6,3" IsEditable="True"/>
+        <Button x:Name="btnCreateTask" Click="btnCreateTask_Click" Content="Create" HorizontalAlignment="Left" Margin="285,92,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnUpdateTask" Content="Update" HorizontalAlignment="Left" Margin="365,92,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnDeleteTask" Content="Delete" HorizontalAlignment="Left" Margin="445,92,0,0" VerticalAlignment="Top" Width="75"/>
+
+        <Button x:Name="btnCancelTask" Content="Cancel" HorizontalAlignment="Left" Margin="365,117,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lblTask" Content="Task:" FontWeight="Bold" HorizontalAlignment="Left" Margin="64,44,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblStatus" Content="Status:" FontWeight="Bold" HorizontalAlignment="Left" Margin="64,86,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDueDate" Content="Due Date:" FontWeight="Bold" HorizontalAlignment="Left" Margin="397,44,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
